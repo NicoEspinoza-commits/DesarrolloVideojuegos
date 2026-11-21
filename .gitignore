@@ -1,0 +1,13 @@
+# Carpetas que Unity regenera solo (no se suben a GitHub)
+Project/[Ll]ibrary/
+Project/[Tt]emp/
+Project/[Oo]bj/
+Project/[Ll]ogs/
+Project/[Uu]ser[Ss]ettings/
+Project/[Mm]emoryCaptures/
+Project/.vs/
+Project/*.csproj
+Project/*.sln
+
+# Información de depuración del build (no se distribuye)
+Build/*_BurstDebugInformation_DoNotShip/
