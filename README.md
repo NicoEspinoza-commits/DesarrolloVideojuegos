@@ -66,4 +66,4 @@ Solo paquetes oficiales de Unity: Universal RP, 2D Tilemap, Input System y uGUI.
 | Parámetros fijos en el código | Valores expuestos con `[SerializeField]` y editables en el Inspector |
 
 ## Roles
-- *(Tu nombre)*: diseño del nivel, programación, física, audio, build y documentación.
+Yo, Nicolás Espinoza diseñe el nivel, programación, física, audio, build y documentación.
