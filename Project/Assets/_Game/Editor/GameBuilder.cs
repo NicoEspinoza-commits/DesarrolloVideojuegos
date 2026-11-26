@@ -270,7 +270,8 @@ public static class GameBuilder
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         var box = player.AddComponent<BoxCollider2D>();
-        box.size = new Vector2(0.75f, 0.95f);
+        box.size = new Vector2(0.6f, 0.8f);
+        box.edgeRadius = 0.08f; // bordes redondeados: no se engancha entre tiles
         box.sharedMaterial = noFriction;
         player.AddComponent<AudioSource>().playOnAwake = false;
         var feet = new GameObject("GroundCheck").transform;
