@@ -1,4 +1,4 @@
-# Aventura Pixel — Prueba 02: Arquitectura y Lógica de un Videojuego
+# BlueyPixel — Prueba 02: Arquitectura y Lógica de un Videojuego
 
 ## Objetivo
 Prototipo de un nivel de un juego de plataformas 2D en Unity. El jugador recorre el nivel, recoge monedas, esquiva o pisa enemigos y evita pinchos y caídas hasta llegar a la bandera de meta.
@@ -42,7 +42,7 @@ Assets/_Game/
 - **SFX**: salto, moneda, pisar a un enemigo y clic de botón.
 
 ## Ejecución
-- **Jugar:** abrir `Build/AventuraPixel.exe`.
+- **Jugar:** abrir `Build/BlueyPixel.exe`.
 - **Editar:** abrir la carpeta `Project/` desde Unity Hub con Unity 6000.2.3f1 y cargar la escena `Assets/_Game/Scenes/MainMenu.unity`.
 
 ## Controles

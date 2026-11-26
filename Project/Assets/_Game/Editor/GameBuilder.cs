@@ -73,7 +73,7 @@ public static class GameBuilder
         var options = new BuildPlayerOptions
         {
             scenes = new[] { $"{Root}/Scenes/MainMenu.unity", $"{Root}/Scenes/Level1.unity", $"{Root}/Scenes/GameOver.unity" },
-            locationPathName = "../Build/AventuraPixel.exe",
+            locationPathName = "../Build/BlueyPixel.exe",
             target = BuildTarget.StandaloneWindows64,
         };
         var report = BuildPipeline.BuildPlayer(options);
@@ -98,8 +98,8 @@ public static class GameBuilder
             new EditorBuildSettingsScene($"{Root}/Scenes/Level1.unity", true),
             new EditorBuildSettingsScene($"{Root}/Scenes/GameOver.unity", true),
         };
-        PlayerSettings.productName = "Aventura Pixel";
-        PlayerSettings.companyName = "Estudiante";
+        PlayerSettings.productName = "BlueyPixel";
+        PlayerSettings.companyName = "NE Games";
         PlayerSettings.fullScreenMode = FullScreenMode.Windowed;
         PlayerSettings.defaultScreenWidth = 1280;
         PlayerSettings.defaultScreenHeight = 720;
@@ -306,7 +306,7 @@ public static class GameBuilder
         // Meta
         var goal = NewSprite("Goal", sFlag, 4);
         var gb = goal.AddComponent<BoxCollider2D>();
-        gb.isTrigger = true; gb.size = new Vector2(0.5f, 3f);
+        gb.isTrigger = true; gb.size = new Vector2(0.5f, 12f); gb.offset = new Vector2(0, 4.5f);
         goal.AddComponent<Goal>();
         pGoal = SavePrefab(goal);
     }
@@ -437,7 +437,7 @@ public static class GameBuilder
         NewMusic();
         var canvas = NewCanvas();
         var center = new Vector2(0.5f, 0.5f);
-        NewText(canvas, "AVENTURA PIXEL", 120, center, new Vector2(0, 250), new Vector2(1600, 200));
+        NewText(canvas, "BLUEYPIXEL", 120, center, new Vector2(0, 250), new Vector2(1600, 200));
         NewText(canvas, "Mover: A/D o flechas   Saltar: Espacio", 40, center, new Vector2(0, 100), new Vector2(1600, 80));
 
         var menu = NewMenuController();
